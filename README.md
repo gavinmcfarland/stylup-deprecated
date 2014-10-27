@@ -3,7 +3,7 @@ Stylup
 
 A custom markup language for managing HTML class names for responsive designs.
 
-It works by looking for certain constructs inside each elements class attribute and then parses them into valid conventional HTML class names.
+It works by looking for certain constructs inside each element's class attribute and then parses them into valid conventional HTML class names.
 
 For example if you write
 
@@ -16,6 +16,8 @@ Stylup will convert the markup into valid HTML class names
 ```html
 <div class="hidden-sm columns-2-md columns-4-lg columns-8-xl"></div>
 ```
+
+Demo: http://jsbin.com/maquwo/7/edit?html,output
 
 ## Installation
 
