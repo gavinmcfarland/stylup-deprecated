@@ -19,7 +19,7 @@ Stylup will convert the markup into valid HTML class names
 
 ## Installation
 
-At the moment stylup works in the browser but eventually I will add server side suport so that it doesn't have to run in the browser.
+At the moment stylup works in the browser but eventually I will add server side support so that it doesn't have to run in the browser.
 
 To make it work, add the script just before your closing body tag
 
