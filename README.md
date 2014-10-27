@@ -8,7 +8,7 @@ It works by looking for certain constructs inside each element's class attribute
 For example if you write
 
 ```html
-<div class="hidden@sm [columns 2@md 4@lg 8@xl])"></div>
+<div class="hidden@sm [columns 2@md 4@lg 8@xl]"></div>
 ```
 
 Stylup will convert the markup into valid HTML class names
@@ -55,8 +55,8 @@ This tool is a bit of an experiment. I started developing after trying to create
 
 I've taken inspiration from other authors who are also discussing similar things in this space. If you are interested on the subject you should also check out Glen Madderns, [Attribute Modules for CSS](http://glenmaddern.com/articles/introducing-am-css).
 
-The current syntax I'm using was influenced by an idea Harry Roberts thought of to visually group [related class names](http://csswizardry.com/2014/05/grouping-related-classes-in-your-markup/). I decided to use this format because one it was easier to build and two it was something designers and front-end engineers might feel comfortable with.
+The current syntax I'm using was influenced by an idea Harry Roberts thought of to visually group [related class names](http://csswizardry.com/2014/05/grouping-related-classes-in-your-markup/). I decided to use this format because it was easier to build and prove as a concept and I wanted it to feel distinctive yet familiar to existing space delimited HTML class names.
 
-I started writing this tool as a project to practice my coding skills and since have learned quite a lot about JavaScript and programming. Unfortunately though you may notice some problems that I couldn't foresee. If you do please find any bugs or have some feedback feel free to create an issue or get in touch with me.
+I started writing this tool as a project to practice my coding skills and since have learned a lot about JavaScript and programming. Unfortunately though you may notice some problems that I couldn't foresee. If you do find any bugs or have some feedback feel free to create an issue or get in touch with me.
 
 Thanks to everyone who helped me write this tool and supported me along the way. A big thanks goes to [Justin Perry](https://github.com/ourmaninamsterdam), [Jim Myhrberg](https://github.com/jimeh) and Khalid Akram.
