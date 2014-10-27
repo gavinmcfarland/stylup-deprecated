@@ -13,7 +13,7 @@ For example if you write
 
 Stylup will convert it to valid HTML class names
 
-```
+```html
 <div class="hidden-sm columns-2-md columns-4-lg columns-8-xl"></div>
 ```
 
