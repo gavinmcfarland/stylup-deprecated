@@ -55,6 +55,6 @@ I've taken inspiration from other authors who are also discussing similar things
 
 The current syntax I'm using was influenced by an idea Harry Roberts thought of to visually group [related class names](http://csswizardry.com/2014/05/grouping-related-classes-in-your-markup/). I decided to use this format because one it was easier to build and two it was something designers and front-end engineers might feel comfortable with.
 
-I started writing this tool as a project to practice my coding skills and since have learned quite a lot about JavaScript and programming. Unfortunately though you may notice some problems that I couldn't foresee. If you do please do feel free to create an issue or get in touch with me.
+I started writing this tool as a project to practice my coding skills and since have learned quite a lot about JavaScript and programming. Unfortunately though you may notice some problems that I couldn't foresee. If you do please find any bugs or have some feedback feel free to create an issue or get in touch with me.
 
 Thanks to everyone who helped me write this tool and supported me along the way. A big thanks goes to [Justin Perry](https://github.com/ourmaninamsterdam), [Jim Myhrberg](https://github.com/jimeh) and Khalid Akram.
