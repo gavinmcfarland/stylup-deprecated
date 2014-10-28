@@ -8,13 +8,13 @@ It works by looking for certain constructs inside each element's class attribute
 For example if you write
 
 ```html
-<div class="hidden@sm [columns 2@md 4@lg 8@xl]"></div>
+<div class="hidden@sm [span 2@md 4@lg 8@xl]"></div>
 ```
 
 Stylup will convert the markup into valid HTML class names
 
 ```html
-<div class="hidden-sm columns-2-md columns-4-lg columns-8-xl"></div>
+<div class="hidden-sm span-2-md span-4-lg span-8-xl"></div>
 ```
 
 Demo: http://sevenupcan.jsbin.com/yuhupi/
@@ -40,13 +40,13 @@ To make it work, add the script just before your closing body tag
 ### Queries
 
 ```html
-<div class="@sm([columns 2]) @md([columns 3])"></div>
+<div class="@sm([columns 2]) @md([span 3])"></div>
 ```
 
 ### Shorthand
 
 ```html
-<div class="hidden@sm [columns 2@md 4@lg 8@xl])"></div>
+<div class="hidden@sm [span 2@md 4@lg 8@xl])"></div>
 ```
 
 ## About / Feedback
