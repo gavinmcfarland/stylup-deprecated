@@ -17,7 +17,7 @@ Stylup will convert the markup into valid HTML class names
 <div class="hidden-sm columns-2-md columns-4-lg columns-8-xl"></div>
 ```
 
-Demo: http://jsbin.com/maquwo/9/edit?html,output
+Demo: http://sevenupcan.jsbin.com/yuhupi/
 
 ## Installation
 
