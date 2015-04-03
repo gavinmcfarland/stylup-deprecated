@@ -173,7 +173,7 @@ var stylup = function() {
   for (_i = 0, _len = elementList.length; _i < _len; _i++) {
     item = elementList[_i];
 
-    if (item.className != false {
+    if (item.className != false) {
       item.className = parse(item.className);
     }
   }
