@@ -1,8 +1,8 @@
 var token = {
-    query: /@(\w+)\((.+?)\)/gim,
-    property: /\[([\w-]+)\s([\w\s/!:@-]+)\]/gim,
-    shortQuery: /([\w-:/]+)@([\w!]+)/gim,
-    normal: /[\w-/]+/gmi
+    query: /@(\w+)\((.+?)\)/gmi,
+    property: /\[([\w\-]+)\s([\w\s/!:@\-]+)\]/gmi,
+    shortQuery: /([\w\-:/]+)@([\w!]+)/gmi,
+    normal: /[\w\-/]+/gmi
 };
 
 var makeRegex = function() {
@@ -20,17 +20,20 @@ var makeRegex = function() {
 };
 
 var split = function(input) {
-  return input.match(makeRegex());
+		return input.match(makeRegex());
 };
 
 var parse = function(input) {
-  var array, htmlClass, item, output, output, _i, _j, _a, _len, _len1, len2;
+  var array, htmlClass, item, output, _i, _j, _a, _len, _len1, len2;
 
   array = split(input);
 
   output = [];
 
-  for (_i = 0, _len = array.length; _i < _len; _i++) {
+	_len = array.length;
+
+
+  for (_i = 0; _i < _len; _i++) {
     item = array[_i];
 
     input = item;
@@ -56,7 +59,7 @@ var parse = function(input) {
             htmlClass = p1;
             values = p2;
 
-            var values = split(values);
+            values = split(values);
 
 
             for(var _z = 0; _z < values.length; _z++) {
@@ -145,7 +148,6 @@ var parse = function(input) {
   return render(output);
 };
 
-
 var render = function(input) {
   var output = [];
 
@@ -171,12 +173,12 @@ var stylup = function() {
   elementList = document.querySelectorAll("[class]");
 
   for (_i = 0, _len = elementList.length; _i < _len; _i++) {
-    item = elementList[_i];
-
-    if (item.className != false) {
-      item.className = parse(item.className);
-    }
-  }
+    element = elementList[_i];
+		if (element.className !== "") {
+			element.className = parse(element.className);
+		}
+	}
 };
+
 
 stylup();
