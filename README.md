@@ -1,7 +1,9 @@
 Stylup
 ======
 
-A custom markup language for managing HTML class names for responsive designs.
+Stylup is preprocessor that allows you to write class names in an easier manner when using utility classes for responsive designs.
+
+## Usage
 
 It works by looking for certain constructs inside each element's class attribute and then parses them into valid conventional HTML class names.
 
@@ -21,14 +23,30 @@ Demo: http://sevenupcan.jsbin.com/yuhupi/
 
 ## Installation
 
-At the moment stylup works in the browser but eventually I will add server side support so that it doesn't have to run in the browser.
-
-To make it work, add the script just before your closing body tag
-
-```html
-   <script src="stylup.js"></script>
-</body>
 ```
+npm install stylup --save-dev
+```
+
+### Gulp
+
+Example using gulp, requires [gulp-dom](https://www.npmjs.com/package/gulp-dom).
+
+```
+var gulp        = require('gulp'),
+    dom         = require('gulp-dom'),
+    stylup      = require('stylup'),
+
+
+gulp.task('stylup', function() {
+    return gulp.src('./src/**/*.html')
+        .pipe(dom(function(){
+            stylup(this);
+            return this;
+        }))
+        .pipe(gulp.dest('./dist'));
+});
+```
+
 ## Syntax
 
 ### Groups

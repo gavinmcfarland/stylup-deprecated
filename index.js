@@ -169,16 +169,16 @@ var render = function(input) {
 
 };
 
-var stylup = function() {
-  elementList = document.querySelectorAll("[class]");
-
-  for (_i = 0, _len = elementList.length; _i < _len; _i++) {
-    element = elementList[_i];
-		if (element.className !== "") {
-			element.className = parse(element.className);
-		}
-	}
+var stylup = function(document) {
+    var elementList = document.querySelectorAll("[class]");
+    var _i = 0;
+    var _len = 0;
+    for (_i = 0, _len = elementList.length; _i < _len; _i++) {
+        var element = elementList[_i];
+            if (element.className !== "") {
+                element.className = parse(element.className);
+            }
+        }
 };
 
-
-stylup();
+module.exports = stylup;

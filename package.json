@@ -1,0 +1,25 @@
+{
+  "name": "stylup",
+  "version": "0.0.2",
+  "description": "A custom markup language for managing HTML class names for responsive designs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sevenupcan/stylup.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "class",
+    "names"
+  ],
+  "author": "Gavin McFarland",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sevenupcan/stylup/issues"
+  },
+  "homepage": "https://github.com/sevenupcan/stylup#readme"
+}
