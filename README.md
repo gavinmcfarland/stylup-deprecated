@@ -34,7 +34,7 @@ Example using gulp, requires [gulp-dom](https://www.npmjs.com/package/gulp-dom).
 ```
 var gulp        = require('gulp'),
     dom         = require('gulp-dom'),
-    stylup      = require('stylup'),
+    stylup      = require('stylup');
 
 
 gulp.task('stylup', function() {
