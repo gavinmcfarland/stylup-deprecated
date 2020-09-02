@@ -1,6 +1,8 @@
 Stylup
 ======
 
+> This repo has been deprecated. Please see https://github.com/limitlessloop/stylup instead.
+
 Stylup is preprocessor that allows you to write class names in an easier manner when using utility classes for responsive designs.
 
 ## Usage
